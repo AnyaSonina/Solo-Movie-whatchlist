@@ -192,7 +192,6 @@ button {
 }
 
 .movie_div {
-  width: 50%;
   height: fit-content;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -212,6 +211,7 @@ button {
 } 
 
 .poster {
+  width: 40%;
   margin-right: 20px;
 }
 
@@ -297,3 +297,9 @@ button {
       opacity: 0.4;
   }
 }
+
+/* @media screen and (max-width: 550px) {
+  .poster {
+    width: 40%;
+  }
+} */

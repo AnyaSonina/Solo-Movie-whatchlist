@@ -40,7 +40,7 @@ async function getHTML() {
 
       movieHTML += `
        <div class="flex movie_div">
-       <img class="poster" src="${data.Poster}" width="200px" hight="400px"/>
+       <img class="poster" src="${data.Poster}" />
        <div class="movie_info">
        <div class="flex movie_title">
        <h1>${data.Title}</h1><span class="rating"><i class="fa-solid fa-star"></i>${data.imdbRating}</span>
