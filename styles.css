@@ -51,7 +51,6 @@ a {
 
 .movie_title {
   align-items: center;
-
 }
 
 .movie_div:last-of-type {
@@ -211,8 +210,7 @@ button {
 } 
 
 .poster {
-  width: 40%;
-  margin-right: 20px;
+ margin-right: 20px;
 }
 
 .read_more { 
@@ -298,8 +296,16 @@ button {
   }
 }
 
-/* @media screen and (max-width: 550px) {
-  .poster {
-    width: 40%;
+@media screen and (max-width: 550px) {
+  .header h1, .movie_title h1 {
+    font-size: 1.3rem;
   }
-} */
+  
+ p {
+   font-size: 0.8rem;
+  }
+
+  .header {
+    padding: 3em;
+  }
+} 
