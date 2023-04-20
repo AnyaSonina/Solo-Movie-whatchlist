@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6c88a3dc0d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body__grid">
+    <header class="header">
+      <h1 class="neon">
+        <span class="flicker-slow">F</span>ind Y<span class="flicker-fast"
+          >o</span
+        >ur <span class="flicker-slow-2">M</span>ov<span class="flicker-fast-2"
+          >i</span
+        >e
+      </h1>
+      <p><a href="watchlist.html">My Watchlist</a></p>
+    </header>
+
+    <main class="search__bar">
+      <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      <input
+        id="input"
+        autofocus
+        type="text"
+        placeholder="Search for a movie..."
+      />
+      <button id="btn" class="color_accent_darker">Search</button>
+    </main>
+
+    <section class="search__results" id="search__outcome">
+      <i class="fa-solid fa-film fa-5x"></i>
+      <p class="start color__accent">Start exploring</p>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
