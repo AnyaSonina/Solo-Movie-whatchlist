@@ -140,7 +140,7 @@ i {
 button, input {
   border: none;
   padding: 1em;
-  outline:2px;
+  outline:none;
 }
 
 #btn {
