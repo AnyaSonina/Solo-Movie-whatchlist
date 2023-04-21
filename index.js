@@ -3,11 +3,11 @@ const btn = document.getElementById("btn")
 let searchResults = document.getElementById("search__outcome")
 let moviesHTML = ""
 let movieHTML = ""
-let preLocalStorage = [""]
+let preLocalStorage = []
 let getLocalStorage = JSON.parse(localStorage.getItem("movie"))
 
 
-if (localStorage.length > 0) {
+if (getLocalStorage.length > 0) {
   preLocalStorage = getLocalStorage
 }
 
@@ -100,8 +100,7 @@ async function getHTML() {
       
       if (!preLocalStorage?.includes(imdbID))
         preLocalStorage.push(imdbID)
-        console.log(preLocalStorage)
-       localStorage.setItem('movie', JSON.stringify(preLocalStorage))
+        localStorage.setItem('movie', JSON.stringify(preLocalStorage))
     })
   }
 }
