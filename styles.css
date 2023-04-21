@@ -187,6 +187,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  gap: 10px;
 }
 
 .movie_div {
@@ -300,7 +301,7 @@ button {
     font-size: 1.3rem;
   }
   
- p {
+ p, .movie_intro p{
    font-size: 0.8rem;
   }
 
