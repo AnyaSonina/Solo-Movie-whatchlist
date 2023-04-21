@@ -308,4 +308,8 @@ button {
   .header {
     padding: 1em;
   }
+
+  .poster{
+    width: 50%;
+  }
 } 
