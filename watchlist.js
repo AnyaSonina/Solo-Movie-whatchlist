@@ -2,9 +2,7 @@ let searchResults = document.getElementById("search__outcome")
 let moviesHTML  = ""
 let movieHTML = ""
 
-
 let savedMovies = JSON.parse(localStorage.getItem('movie'))
-console.log(savedMovies)
 
 async function render(){
   for(const item of savedMovies){
