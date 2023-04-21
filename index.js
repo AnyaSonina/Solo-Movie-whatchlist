@@ -3,7 +3,7 @@ const btn = document.getElementById("btn")
 let searchResults = document.getElementById("search__outcome")
 let moviesHTML = ""
 let movieHTML = ""
-let preLocalStorage = []
+let preLocalStorage = [""]
 let getLocalStorage = JSON.parse(localStorage.getItem("movie"))
 
 
