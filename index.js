@@ -100,6 +100,7 @@ async function getHTML() {
       
       if (!preLocalStorage?.includes(imdbID))
         preLocalStorage.push(imdbID)
+        console.log(preLocalStorage)
        localStorage.setItem('movie', JSON.stringify(preLocalStorage))
     })
   }
