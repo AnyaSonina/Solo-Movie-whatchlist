@@ -5,11 +5,11 @@ let moviesHTML = ""
 let movieHTML = ""
 let preLocalStorage = []
 let getLocalStorage = JSON.parse(localStorage.getItem("movie"))
-let getLocalStorageArr = Array.from(getLocalStorage)
+let getLocalStorageArr = [...getLocalStorage]
 
 
 if (getLocalStorageArr.length > 0) {
-  preLocalStorage = getLocalStorage
+  preLocalStorage = getLocalStorageArr
 }
 
 input.addEventListener("keypress", function (e) {
