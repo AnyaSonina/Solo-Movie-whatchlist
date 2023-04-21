@@ -5,9 +5,10 @@ let moviesHTML = ""
 let movieHTML = ""
 let preLocalStorage = []
 let getLocalStorage = JSON.parse(localStorage.getItem("movie"))
+let getLocalStorageArr = [...getLocalStorage]
 
 
-if (getLocalStorage.length > 0) {
+if (getLocalStorageArr.length > 0) {
   preLocalStorage = getLocalStorage
 }
 
