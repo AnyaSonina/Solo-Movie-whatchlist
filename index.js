@@ -102,7 +102,7 @@ async function getHTML() {
       
       watchlistBtn.innerHTML = btnHTML 
       preLocalStorage?.push(imdbID)
-      localStorage.setItem('movie', JSON.stringify(preLocalStorage))
+      localStorage?.setItem('movie', JSON.stringify(preLocalStorage))
       
       
     })
