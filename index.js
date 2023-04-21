@@ -95,7 +95,7 @@ async function getHTML() {
       let imdbID = watchlistBtn.id
     
     
-    let btnHTML =  preLocalStorage.includes(imdbID) ? `<button class="watchlist_btn">
+    let btnHTML =  preLocalStorage?.includes(imdbID) ? `<button class="watchlist_btn">
       <i class="fa-solid fa-check-double"></i>Already there</button>`
       : `<button class="watchlist_btn"><i class="fa-solid fa-circle-check"></i>Added</button>`
 
