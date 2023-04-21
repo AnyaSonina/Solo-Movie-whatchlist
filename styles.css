@@ -140,7 +140,6 @@ i {
 button, input {
   border: none;
   padding: 1em;
-  outline:none;
 }
 
 #btn {
@@ -307,9 +306,5 @@ button {
 
   .header {
     padding: 1em;
-  }
-
-  .poster{
-    width: 50%;
   }
 } 
