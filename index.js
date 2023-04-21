@@ -94,12 +94,11 @@ async function getHTML() {
     watchlistBtn.addEventListener("click", function adding() {
       let imdbID = watchlistBtn.id
       
-      if(preLocalStorage !== null)
-      watchlistBtn.innerHTML = preLocalStorage.includes(imdbID) ? `<button class="watchlist_btn">
+         watchlistBtn.innerHTML = preLocalStorage?.includes(imdbID) ? `<button class="watchlist_btn">
       <i class="fa-solid fa-check-double"></i>Already there</button>`
       : `<button class="watchlist_btn"><i class="fa-solid fa-circle-check"></i>Added</button>`
       
-      if (!preLocalStorage.includes(imdbID))
+      if (!preLocalStorage?.includes(imdbID))
         preLocalStorage.push(imdbID)
        localStorage.setItem('movie', JSON.stringify(preLocalStorage))
     })
