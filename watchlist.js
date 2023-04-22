@@ -1,11 +1,16 @@
 let searchResults = document.getElementById("search__outcome")
+let emptyState = document.querySelector(".empty-state")
 let moviesHTML  = ""
 let movieHTML = ""
 
 let savedMovies = JSON.parse(localStorage.getItem('movie'))
 
 async function render(){
+  if(savedMovies) {
+
+  
   for(const item of savedMovies){
+  
     const res = await fetch(`https://www.omdbapi.com/?i=${item}&apikey=eedb40e&plot=full`)
     const data = await res.json()
     
@@ -66,11 +71,19 @@ async function render(){
 
         let movieDelete = savedMovies.indexOf(imdbID)
         savedMovies.splice(movieDelete, 1)
-                
+       
         localStorage.removeItem('movie')
+        
+        if(savedMovies.length === 0) {  
+          searchResults.innerHTML = emptyState.outerHTML
+        }
         localStorage.setItem('movie', JSON.stringify(savedMovies))
       })
     })
   }
+} 
 }
+
+
+
 render()

@@ -32,6 +32,10 @@ body {
   letter-spacing: 1px;
 }
 
+.empty-state {
+  text-align: center;
+}
+
 .color__accent {
   color: #c6cad0;
 }

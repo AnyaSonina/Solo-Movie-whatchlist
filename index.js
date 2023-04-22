@@ -5,6 +5,7 @@ let moviesHTML = ""
 let movieHTML = ""
 let preLocalStorage = []
 let getLocalStorage = JSON.parse(localStorage.getItem("movie"))
+const awaitingState = `<i class="fa fa-spinner fa-spin" style="font-size:60px; color: #c6cad0"></i>`
 
 if ( getLocalStorage) {
   preLocalStorage = getLocalStorage
@@ -18,7 +19,7 @@ input.addEventListener("keypress", function (e) {
 })
 
 async function getHTML() {
-
+  searchResults.innerHTML = awaitingState
   let title = input.value
 
   const res = await fetch(`https://www.omdbapi.com/?apikey=71889999&t=${title}&s=${title}&plot=full&type`)
@@ -33,7 +34,7 @@ async function getHTML() {
     `
   }else {
     movieHTML = ""
-    for (let i = 0; i < dataArray.length; i++) {
+      for (let i = 0; i < dataArray.length; i++) {
       const res = await fetch(`https://www.omdbapi.com/?apikey=71889999&i=${dataArray[i].imdbID}&plot=full`)
       const data = await res.json()
 
